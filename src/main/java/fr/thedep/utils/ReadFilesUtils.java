@@ -1,0 +1,33 @@
+package fr.thedep.utils;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public final class ReadFilesUtils {
+
+    private ReadFilesUtils() {}
+
+    public static List<String> readFileInString(String path) throws FileNotFoundException {
+        List<String> data = new ArrayList<>();
+        File text = new File("src/main/resources/input/" + path);
+        Scanner input = new Scanner(text);
+        while (input.hasNextLine()) {
+            data.add(input.nextLine());
+        }
+        return data;
+    }
+
+    public static List<Integer> readFileInInteger(String path) throws FileNotFoundException {
+        ArrayList<Integer> data = new ArrayList<>();
+        File text = new File("src/main/resources/input/" + path);
+        Scanner input = new Scanner(text);
+        while (input.hasNextLine()) {
+            data.add(Integer.parseInt(input.nextLine()));
+        }
+        return data;
+    }
+
+}
