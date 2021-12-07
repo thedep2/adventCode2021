@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>fr.thedep</groupId>
+    <artifactId>adventOdCode2021</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <name>advent-of-code</name>
+    <description>Advent of code 2021</description>
+
+    <properties>
+        <!--====================================================================
+        = JAVA VERSION
+        =====================================================================-->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.source>11</java.source>
+        <java.target>11</java.target>
+
+        <maven.compiler.target>11</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
+
+    </properties>
+
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.8.2</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>3.21.0</version>
+        </dependency>
+
+
+    </dependencies>
+</project>
