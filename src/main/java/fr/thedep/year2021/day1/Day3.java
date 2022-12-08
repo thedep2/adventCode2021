@@ -1,4 +1,4 @@
-package fr.thedep.day1;
+package fr.thedep.year2021.day1;
 
 import fr.thedep.utils.ReadFilesUtils;
 
@@ -8,7 +8,7 @@ import java.util.List;
 public class Day3 {
 
     public static void main(String[] args) throws FileNotFoundException {
-        List<String> input1 = ReadFilesUtils.readFileInString("day3exo1.txt");
+        List<String> input1 = ReadFilesUtils.readFileInString("main", "day3exo1.txt");
         System.out.println(exo1(input1));
     }
 

@@ -1,4 +1,4 @@
-package fr.thedep.day1;
+package fr.thedep.year2021.day1;
 
 import java.util.List;
 import java.util.stream.IntStream;

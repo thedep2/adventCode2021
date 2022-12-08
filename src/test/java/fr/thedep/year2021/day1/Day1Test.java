@@ -1,10 +1,10 @@
-package fr.thedep.day1;
+package fr.thedep.year2021.day1;
 
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static fr.thedep.day1.Day1.calc;
+import static fr.thedep.year2021.day1.Day1.calc;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class Day1Test {

@@ -10,9 +10,9 @@ public final class ReadFilesUtils {
 
     private ReadFilesUtils() {}
 
-    public static List<String> readFileInString(String path) throws FileNotFoundException {
+    public static List<String> readFileInString(String path, String file) throws FileNotFoundException {
         List<String> data = new ArrayList<>();
-        File text = new File("src/main/resources/input/" + path);
+        File text = new File("src/" + path + "/resources/input/" + file);
         Scanner input = new Scanner(text);
         while (input.hasNextLine()) {
             data.add(input.nextLine());
@@ -20,9 +20,9 @@ public final class ReadFilesUtils {
         return data;
     }
 
-    public static List<Integer> readFileInInteger(String path) throws FileNotFoundException {
+    public static List<Integer> readFileInInteger(String path, String file) throws FileNotFoundException {
         ArrayList<Integer> data = new ArrayList<>();
-        File text = new File("src/main/resources/input/" + path);
+        File text = new File("src/" + path + "/resources/input/" + file);
         Scanner input = new Scanner(text);
         while (input.hasNextLine()) {
             data.add(Integer.parseInt(input.nextLine()));
