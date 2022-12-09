@@ -13,9 +13,10 @@ public final class ReadFilesUtils {
     public static List<String> readFileInString(String path, String file) throws FileNotFoundException {
         List<String> data = new ArrayList<>();
         File text = new File("src/" + path + "/resources/input/" + file);
-        Scanner input = new Scanner(text);
-        while (input.hasNextLine()) {
-            data.add(input.nextLine());
+        try (Scanner input = new Scanner(text)) {
+            while (input.hasNextLine()) {
+                data.add(input.nextLine());
+            }
         }
         return data;
     }
@@ -23,9 +24,10 @@ public final class ReadFilesUtils {
     public static List<Integer> readFileInInteger(String path, String file) throws FileNotFoundException {
         ArrayList<Integer> data = new ArrayList<>();
         File text = new File("src/" + path + "/resources/input/" + file);
-        Scanner input = new Scanner(text);
-        while (input.hasNextLine()) {
-            data.add(Integer.parseInt(input.nextLine()));
+        try (Scanner input = new Scanner(text)) {
+            while (input.hasNextLine()) {
+                data.add(Integer.parseInt(input.nextLine()));
+            }
         }
         return data;
     }

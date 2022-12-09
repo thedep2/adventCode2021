@@ -27,7 +27,7 @@ class Day14Test {
 
     @Test
     void testExo2() {
-        assertThat(Day14.exo(input1, 40)).isEqualTo(2188189693529l);
+        assertThat(Day14.exo(input1, 40)).isEqualTo(2188189693529L);
     }
 
     //    @Test

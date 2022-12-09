@@ -24,7 +24,7 @@ public class Day14 {
     }
 
     protected static long exo(List<String> input, long step) {
-        
+
         final Map<String, String> dict = getDict(input);
         String poly = input.get(0);
 
@@ -35,7 +35,6 @@ public class Day14 {
 
             final char lastChar = poly.charAt(poly.length() - 1);
 
-            //            long bufferSize = 1048576;
             int bufferSize = 2013265929;
 
             List<String> listToStream = new ArrayList<>();

@@ -13,11 +13,11 @@
         = JAVA VERSION
         =====================================================================-->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java.source>11</java.source>
-        <java.target>11</java.target>
+        <java.source>19</java.source>
+        <java.target>19</java.target>
 
-        <maven.compiler.target>11</maven.compiler.target>
-        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>19</maven.compiler.target>
+        <maven.compiler.source>19</maven.compiler.source>
 
     </properties>
 
@@ -27,14 +27,14 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
-            <version>5.8.2</version>
+            <version>5.9.0</version>
             <scope>test</scope>
         </dependency>
 
         <dependency>
             <groupId>org.assertj</groupId>
             <artifactId>assertj-core</artifactId>
-            <version>3.21.0</version>
+            <version>3.23.1</version>
         </dependency>
 
 
