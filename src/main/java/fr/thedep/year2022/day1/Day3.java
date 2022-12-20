@@ -43,11 +43,12 @@ public final class Day3 {
     @NotNull
     private static String exo2(List<String> inputs) {
         final int sum1 = IntStream.range(0, inputs.size())
-                                  .mapMulti((value, ic) -> {
-                                      if (value % 3 == 0)
-                                          ic.accept(value);
-                                  })
-                                  .mapToObj(value -> new Group(new Rucksack(inputs.get(value)), new Rucksack(inputs.get(value + 1)), new Rucksack(inputs.get(value + 2))))
+                                  .filter(value -> value % 3 == 0)
+                                  .mapToObj(value -> new Group(
+                                          new Rucksack(inputs.get(value)),
+                                          new Rucksack(inputs.get(value + 1)),
+                                          new Rucksack(inputs.get(value + 2))
+                                  ))
                                   .mapToInt(Group::getScore)
                                   .sum();
         return "" + sum1;
