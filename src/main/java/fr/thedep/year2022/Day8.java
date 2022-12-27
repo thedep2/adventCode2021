@@ -19,8 +19,8 @@ public final class Day8 {
     private Day8() {}
 
     public static void main(String[] args) throws FileNotFoundException {
-        //        System.out.println(exo1(INPUTS.lines().toList()));
-        //        System.out.println(exo1(ReadFilesUtils.readFileInString("main", "year2022day8exo1.txt")));
+        System.out.println(exo1(INPUTS.lines().toList()));
+        System.out.println(exo1(ReadFilesUtils.readFileInString("main", "year2022day8exo1.txt")));
         System.out.println(exo2(INPUTS.lines().toList()));
         System.out.println(exo2(ReadFilesUtils.readFileInString("main", "year2022day8exo1.txt")));
     }
