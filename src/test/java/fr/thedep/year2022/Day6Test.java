@@ -1,4 +1,4 @@
-package fr.thedep.year2022.day1;
+package fr.thedep.year2022;
 
 import org.junit.jupiter.api.Test;
 

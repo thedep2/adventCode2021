@@ -1,4 +1,4 @@
-package fr.thedep.year2022.day1;
+package fr.thedep.year2022;
 
 import fr.thedep.utils.ReadFilesUtils;
 import org.jetbrains.annotations.Contract;
