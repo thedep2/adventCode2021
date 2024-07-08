@@ -8,15 +8,15 @@ import java.util.List;
 
 public final class DayTemplate {
 
-    private static final List<String> INPUTS = List.of(
-    );
+    private static final String INPUTS = """
+            """;
 
     private DayTemplate() {}
 
     public static void main(String[] args) throws FileNotFoundException {
-        System.out.println(exo1(INPUTS));
+        System.out.println(exo1(INPUTS.lines().toList()));
         System.out.println(exo1(ReadFilesUtils.readFileInString("main", "year2022day3exo1.txt")));
-        System.out.println(exo2(INPUTS));
+        System.out.println(exo2(INPUTS.lines().toList()));
         System.out.println(exo2(ReadFilesUtils.readFileInString("main", "year2022day3exo1.txt")));
     }
 
